@@ -3,7 +3,6 @@ server:
   error:
     include-message: always
 
-
 cors:
   allowed-origins: "*"
   allowed-methods: "*"
@@ -13,3 +12,5 @@ cors:
 spring:
   main:
     web-application-type: servlet
+  application:
+    name: weather-app-api
