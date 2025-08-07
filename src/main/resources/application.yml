@@ -1,0 +1,16 @@
+server:
+    port: 8080
+    error:
+        include-message: always
+
+cors:
+    allowed-origins: ${CORS_ORIGINS:"*"}
+    allowed-methods: "*"
+    allowed-headers: "*"
+    exposed-headers: "*"
+
+spring:
+    main:
+        web-application-type: servlet
+    application:
+        name: weather-app-api
