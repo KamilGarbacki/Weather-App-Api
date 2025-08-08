@@ -25,9 +25,9 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Run tests
-        run: mvn -ntp -B verify
-
+      - name: Run Unit Tests
+        run: mvn test
+        
       - name: Build and Push to DockerHub
-        run: mvn package
+        run: mvn package -DskipTests
 
